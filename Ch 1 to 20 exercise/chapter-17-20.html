@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Chapter 17 - 20 (for Loops)</title>
+</head>
+
+<body>
+
+    <script>
+        // Chapter 17 - 20 (for Loops)
+
+        //Q. No. 1. Write a statement in which loop is to run 10 times
+
+        //Answer.
+        //Example-1
+        for (var i = 0; i < 10; i++) {
+            // Your code to be executed in each iteration
+            console.log("Iteration:", i + 1);
+        }
+        //Example-2
+        for (var i = 0; i < 10; i++) {
+            console.log(i);
+        }
+
+
+        //Q. No. 2. Code the first line of a for loop with the usual counter name, usual starting value, and usual increment. Run it 12 times using <= to specify how many loops.
+
+        //Answer.
+        for (var i = 0; i <= 11; i++) {
+
+            console.log(i + 1);
+        }
+
+
+        // Q. No. 3. What are the 5 characters missing from this code, excluding any spaces that are missing? Type them in order, with no spaces or commas between them.
+        // for var i = 0 i <= 4 i++
+        // Note: Compvare this statement by yourself
+
+        //Answer.
+        // for (var i = 0; i <= 4; i++) {
+
+
+        //Q. NO. 4. Code the first line of a for loop with a counter name that's not i. Code the usual starting value and usual increment. Run it 100 times using < to specify how many loops.
+
+        //Answer.
+        for (var count = 0; count < 100; count++) {
+
+            console.log(count + 1);
+        }
+
+        //Q. No. 5. Code the first line of a for loop with the usual counter and the usual starting value. Run it 3 times using > to specify how many loops. Decrement it with each iteration.
+
+        //Answer.
+        for (var i = 3; i > 0; i--) {
+
+            console.log("Iteration:", 4 - i);
+        }
+
+
+        //Q. No. 6. The statement assigns the number of elements in the array to the variable.
+
+        //Answer.
+        var array = [1, 2, 3, 4, 5];
+        var numberOfElements = array.length;
+
+        console.log(numberOfElements); // This will output the number of elements in the array
+
+
+        //Q. NO. 7. Set a variable named “flag” with an initial Boolean value of your choice.
+
+        //Answer.
+        var flag = true;
+
+
+        //Q. No. 8. Code the first line of a for loop with the usual counter, the usual starting value, and the usual incrementing. Limit the number of loops by the number of elements in the array pets.
+
+        //Answer.
+        var pets = ['lion', 'deer', 'cow', 'bird'];
+        for (var i = 0; i < pets.length; i++) {
+
+            console.log(i, pets[i]);
+        }
+
+
+        // Q.No. 9. Coding Exercise:
+        //     Set a for loop to run 10 iterations.
+        //     On the second iteration, display the counter in an alert. (It should be 1.) Break out of the loop.
+
+        //Answer.
+        for (var i = 0; i < 10; i++) {
+            if (i === 1) {
+                alert("Counter value on the second iteration: " + i);
+                break; // Exit the loop
+            }
+        }
+
+        //Q. No. 10. Create an array which contains user names Code a prompt with the message "Enter first name". The user's response is assigned to firstName.Code the first line of a for loop with the usual counter, the usual starting value, and the usual incrementing. Limit the number of loops by the number of elements in the array user names. Code an if statement that tests the presense of (user name) in an array.If user name match Alert that "Enter". if not then alert ("Please write correct user name")
+
+        //Answer.
+        // Create an array of user names
+        var userNames = ["Faisal", "Sami", "Ali", "Mahad"];
+
+        // Prompt the user to enter their first name
+        var firstName = prompt("Enter first name");
+
+        // Use a for loop to check the presence of the entered name in the array
+        for (var i = 0; i < userNames.length; i++) {
+            if (firstName === userNames[i]) {
+                alert("Welcome, " + firstName + "!");
+                break; // Exit the loop if a match is found
+            } else {
+                alert("Please write the correct user name.");
+                break;
+            }
+        }
+
+
+        // Q. No. 11. Complete this code to display an alert if a match isn't found.
+        //         var matchFound = false;
+        //         for (var i = 0; i < list.length; i++) {
+        //         if (userInput === list[i]) {
+        //         alert("Match found");
+        //         matchFound = true;
+        //         break;
+        //         }
+        //     };
+
+        //Answer.
+        var matchFound = false;
+        var list = ["Honda", "Toyota", "Suzuki"];
+
+        var userInput = prompt("Enter input"); // Assuming userInput is already defined
+
+        for (var i = 0; i < list.length; i++) {
+            if (userInput === list[i]) {
+                alert("Match found");
+                matchFound = true;
+                break;
+            }
+        }
+
+        if (!matchFound) {
+            alert("Match not found. Please enter a valid input.");
+        }
+
+
+        // Q. No.12. var firstArr = [“a”, “b”, “c”, “d”, “e”, “f”];
+        //     var secondArr = [1, 2, 3, 4, 5, 6];
+        //     Code the first line of a for loop with the usual counter, the usual starting value, and the usual incrementing. Limit the number of loops by the number of elements in the array firstArr. In the scope of main loop Code the nested loop. Limit the number of nested loops by the number of elements in the array
+        //     secondArr. After that concatenate the both loops.
+        //     Expected Output:
+        //     a1
+        //     a2
+        //     a3
+        //     a4
+        //     …
+        //     f6
+
+        //Answer.
+        var firstArr = ["a", "b", "c", "d", "e", "f"];
+        var secondArr = [1, 2, 3, 4, 5, 6];
+
+        // Main loop
+        for (var i = 0; i < firstArr.length; i++) {
+            // Nested loop
+            for (var j = 0; j < secondArr.length; j++) {
+                // Concatenate and display the combination of elements from both arrays
+                console.log(firstArr[i] + secondArr[j]);
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

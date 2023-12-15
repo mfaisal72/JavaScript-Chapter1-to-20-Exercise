@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Chapter 13 (Testing sets of conditions)</title>
+</head>
+
+<body>
+
+    <script>
+        // Chapter 13 (Testing sets of conditions)
+
+        //Q. No. 1. Code the first line of an if statement that tests whether both are true: a has the same value as b and c has the same value as d.
+
+        //Answer.
+        // if (a === b && c === d) {
+        // both conditions are true 
+        // }
+
+
+
+        //Q. No. 2. Code the first line of an if statement that tests whether either or both are true: a has the same value as b or c doesn't have the same value as d.
+
+        //Ansewr.
+        // if (a === b || c !== d) {
+        // if either a is equal to b or c is not equal to d.
+        // }
+
+
+        // Q. NO. 3. Code the first line of an if statement that tests whether
+        //             I. name is either "Hamza" or "Arsalan".
+        //             II. age is Less than 60.
+
+        //Ansewr.
+        // if ((name === "Hamza" || name === "Arsalan") && age < 60) {
+        //     // if the name is either "Hamza" or "Arsalan" and age is less than 60
+        // }
+
+
+        //Q. No. 4. Declare two variables and assign them number values. If the first variable is less than the second variable or greater than the second variable, display an alert.
+
+        //Answer.
+        // Declare and assign values to two variables
+        var firstNumber = 5;
+        var secondNumber = 10;
+
+        // Check if the first variable is less than or greater than the second variable
+        if (firstNumber < secondNumber || firstNumber > secondNumber) {
+            alert("The first number is either less than or greater than the second number.");
+        } else {
+            alert("The first number is equal to the second number.");
+        }
+
+
+        //Q. No. 5. Declare 2 variables. Assign one of them your first name and the other one your last name. Code 2 prompts, asking for your first and your last name. If your answers match the two variables, display an alert.
+
+        //Answer.
+        // Declare variables and assign your first and last names
+        var firstName = "Mohammad";
+        var lastName = "Faisal";
+
+        // Prompt the user for their first name
+        var userFirstName = prompt("Enter your first name:");
+
+        // Prompt the user for their last name
+        var userLastName = prompt("Enter your last name:");
+
+        // Check if the entered names match the variables
+        if (userFirstName === firstName && userLastName === lastName) {
+            alert("Names match! Welcome, " + userFirstName + " " + userLastName + "!");
+        } else {
+            alert("Names do not match. Access denied.");
+        }
+
+
+    </script>
+
+</body>
+
+</html>

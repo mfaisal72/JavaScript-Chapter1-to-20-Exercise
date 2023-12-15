@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Chapter 16 (Array III)</title>
+</head>
+
+<body>
+
+    <script>
+        // Chapter 16 (Array III)
+
+        //Q. No. 1. var sizes = ["S", "M", "XL", "XXL", "XXXL"]. Remove the first element of an array.
+
+        //Answer.
+        var sizes = ["S", "M", "XL", "XXL", "XXXL"];
+
+        // Remove the first element from the array
+        sizes.shift();
+
+        // Display the modified array in an alert
+        alert("Modified array: " + sizes);
+
+
+        //Q. No. 2. var sizes = ["S", "M", "XL", "XXL", "XXXL"]. Add three number elements to the beginning of an array.
+
+        //Answer.
+        var sizes = ["S", "M", "XL", "XXL", "XXXL"];
+
+        // Add three number elements to the beginning of the array
+        sizes.unshift(1, 2, 3);
+
+        // Display the modified array in an alert
+        alert("Modified array: " + sizes);
+
+
+
+        //Q. No. 3. Declare an array with one element. Add a second element to the beginning of the array. Create an alert whose message is the new first element
+
+        //Answer.
+
+        // Declare an array with one element
+        var myArray = ["First Element"];
+
+        // Add a second element to the beginning of the array
+        myArray.unshift("New First Element");
+
+        // Create an alert with the new first element
+        alert("New first element: " + myArray[0]);
+
+
+        //Q. No. 4. var sizes = ["S", "M", "XL", "XXL", "XXXL"]. Insert "L" into the array between "M" and "XL".
+
+        //Answer.
+        var sizes = ["S", "M", "XL", "XXL", "XXXL"];
+
+        // Insert "L" between "M" and "XL"
+        sizes.splice(2, 0, "L");
+
+        // Display the modified array in an alert
+        alert("Modified array: " + sizes);
+
+
+        //Q. No. 5. var sizes = ["S", "M", "XL", "XXL", "XXXL"]. Copy the first 3 sizes of the array and put them into a new array, regSizes.
+
+        //Answer.
+        var sizes = ["S", "M", "XL", "XXL", "XXXL"];
+
+        // Copy the first 3 sizes into a new array
+        var regSizes = sizes.slice(0, 3);
+
+        // Display the new array in an alert
+        alert("Regular Sizes: " + regSizes);
+
+
+
+        //Q. No.6. var pets = ["dog", "cat", "ox", "duck", "frog"]. Add 2 elements after "dog" and remove "cat", "ox", and "duck".
+
+        //Answer.
+        var pets = ["dog", "cat", "ox", "duck", "frog"];
+
+        // Find the index of "dog" in the array
+        var indexOfDog = pets.indexOf("dog");
+
+        // Add two elements after "dog"
+        pets.splice(indexOfDog + 1, 0, "parrot", "hamster");
+
+        // Remove "cat," "ox," and "duck"
+        pets.splice(indexOfDog + 2, 3);
+
+        // Display the modified array in an alert
+        alert("Modified array: " + pets);
+
+
+        //Q. No. 7. var pets = ["dog", "cat", "ox", "duck", "frog"]; Remove "cat" and "ox".
+
+        //Answer.
+        var pets = ["dog", "cat", "ox", "duck", "frog"];
+
+        // Find the indices of "cat" and "ox" in the array
+        var indexOfCat = pets.indexOf("cat");
+        var indexOfOx = pets.indexOf("ox");
+
+        // Remove "cat" and "ox" using splice
+        pets.splice(indexOfCat, 1);
+        pets.splice(indexOfOx, 1);
+
+        // Display the modified array in an alert
+        alert("Modified array: " + pets);
+
+
+        //Q. No. 8. var pets = ["dog", "cat", "ox", "duck", "frog", "flea"]; Reduce it to "duck" and "frog" using slice.
+
+        //Answer.
+        var pets = ["dog", "cat", "ox", "duck", "frog", "flea"];
+
+        // Use slice to get "duck" and "frog"
+        var reducedPets = pets.slice(3, 5);
+
+        // Display the reduced array in an alert
+        alert("Reduced array: " + reducedPets);
+
+    </script>
+
+</body>
+
+</html>

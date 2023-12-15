@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 6 Math Expression II</title>
+</head>
+<body>
+
+<script>
+// Chapter 6 (Math Expression II)
+//Q. No. 1. Code a short form of x = x + 1; Use either of the two legal expressions.
+//Answer.
+// Using the increment operator
+x++;
+
+// Another equivalent expression
+x += 1;
+
+
+// Q. No.2. If x has a value of 100, what is the fastest way to reduce it to 99 with a math expression?
+//Answer.
+// Assuming x has a value of 100
+x--; // Now, x will have a value of 99
+
+
+// Q No.3. var x = 50;
+// var y = x++;
+// What is the value of y?
+//Answer.
+var x = 50;
+var y = x++; //the value will be x is 51
+
+// The value of y is initially 50 (the original value of x).
+// The value of x will be 51 after the increment operation.
+// Therefore, y will be 50.
+
+
+// Q No.4. var y = 50;
+// var z = --y;
+// What is the value of z?
+//Answer.
+var y = 50;
+var z = --y; //the value of z will be 49
+
+// y is decremented by 1, resulting in 49.
+// The value of z is then assigned the decremented value of y, which is 49.
+// Therefore, the value of z is 49.
+
+
+// Q No. 5. In a single statement, decrement num and assign its original value to newNum.
+//Answer.
+
+var num = 10;
+
+console.log("Original num:", num, "New num:", --num);
+
+
+// Q No.6. In a single statement add 1 to a variable and assign its original value to another variable.
+//Answer
+var originalNum = 5;
+var newNum = originalNum++; // After this code is executed, originalNum will be 6, and newNum will be 5.
+
+
+// Q No.7. Assign a number value to a variable.
+// Increment the variable.
+// Display the new value in an alert
+
+//Answer.
+// Assign a number value to a variable
+var myNumber = 10;
+
+// Increment the variable
+myNumber++;
+
+alert(myNumber); // the new value will be 11
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Chapter 12 (if…else and else if statements)</title>
+</head>
+
+<body>
+
+    <script>
+        // Chapter 12 (if…else and else if statements)
+        //Q. No. 1. Code an if statement that tests whether the value represented by a variable is greater than or equal to the value represented by another variable. If so, display an alert. If not, display a different alert.
+
+        //Answer.
+
+        // Assume you have two variables: variable1 and variable2
+        var variable1 = 10;
+        var variable2 = 5;
+
+        // Check if variable1 is greater than or equal to variable2
+        if (variable1 >= variable2) {
+            // Display an alert if the condition is true
+            alert("variable1 is greater than or equal to variable2");
+        } else {
+            // Display a different alert if the condition is false
+            alert("variable1 is less than variable2");
+        }
+
+
+        //Q. No. 2. Write a program using if else and else if statement which take marks from user. And the program will calculate your percentage and give you grade A/C to Your percentage. (MARKSHEET)
+
+        //Answer.
+        // Get marks from the user
+        var marks = prompt("Enter your marks:");
+
+        // Convert marks to a numeric value
+        marks = parseFloat(marks);
+
+        // Check if the entered value is a valid number
+        if (isNaN(marks)) {
+            alert("Please enter a valid number for marks.");
+        } else {
+            // Calculate percentage
+            var percentage = (marks / 100) * 100;
+
+            // Determine the grade based on percentage
+            if (percentage >= 90) {
+                alert("Your percentage is " + percentage.toFixed(0) + "%. Grade: A");
+            } else if (percentage >= 80) {
+                alert("Your percentage is " + percentage.toFixed(0) + "%. Grade: B");
+            } else if (percentage >= 70) {
+                alert("Your percentage is " + percentage.toFixed(0) + "%. Grade: C");
+            }
+        }
+
+
+        /*Q. No. 3. This is the if statement that begins the code.
+                    if (a === 10) {
+                    alert("a is 10");
+                    }
+                    If a isn't 10, display an alert that says The correct value of a is______
+          
+                    Note: Try this by yourself */
+
+        //Answer.
+        // Assume a is a variable with some value
+        var a = 5;
+
+        // Check if a is equal to 10
+        if (a === 10) {
+            alert("a is 10");
+        } else {
+            alert("The correct value of a is " + a);
+        }
+
+
+        // Q. No. 4. Prompt the user to enter a city.    
+        //             If the city is Karachi, display an alert acknowledging it is Karachi.
+        //             If not, check to see if it's Lahore.
+        //             If it is, display an alert acknowledging it's Lahore.
+        //             Otherwise, display a different alert.
+
+        //Answer.
+        // Prompt the user to enter a city
+        var userCity = prompt("Enter a city:");
+
+        // Convert the input to lowercase to make the comparison case-insensitive
+        userCity = userCity.toLowerCase();
+
+        // Check if the entered city is Karachi
+        if (userCity === "karachi") {
+            alert("You entered Karachi. Acknowledging it is Karachi.");
+        } else if (userCity === "lahore") {
+            // Check if the entered city is Lahore
+            alert("You entered Lahore. Acknowledging it's Lahore.");
+        } else {
+            // Display a different alert for cities other than Karachi and Lahore
+            alert("You entered " + userCity + ". This city is not acknowledged in this program.");
+        }
+
+
+    </script>
+
+</body>
+
+</html>
